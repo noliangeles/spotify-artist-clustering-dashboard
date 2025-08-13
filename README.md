@@ -73,7 +73,6 @@ project-root/
 ## 📌 Author
 
 **Noli Angeles**  
-[GitHub](https://github.com/noliangeles) | [Portfolio](#) *(link it when ready)*
 
 ---
 
