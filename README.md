@@ -36,15 +36,58 @@ project-root/
 > **In Progress**  
 > Currently setting up the database schema and pulling artist data from the Spotify API.
 
-## ✅ Planned Milestones
+## 📋 Project Checklist
 
-- [x] Project scaffold & plan
-- [ ] Database schema & setup
-- [ ] Spotify API data pipeline
-- [ ] Data cleaning & transformation
-- [ ] Clustering model (KMeans/t-SNE)
-- [ ] Tableau dashboard
-- [ ] Final write-up & deployment
+### 📦 Phase 1: Data Engineering + Dashboard (Data Analytics)
+
+- [x] Set up GitHub repo and folder structure
+- [x] Define database schema (SQL)
+- [x] Create tables in MySQL
+- [ ] Authenticate Spotify API via `spotipy`
+- [ ] Pull artist + album + track data
+- [ ] Pull audio features for tracks
+- [ ] Load data into SQL tables
+- [ ] Export data for Tableau
+- [ ] Design and publish Tableau dashboard:
+  - [ ] Artist popularity growth
+  - [ ] Audio feature trends
+  - [ ] Genre breakdown
+  - [ ] Interactive filters
+
+---
+
+### 🤖 Phase 2: Machine Learning (Artist Clustering)
+
+- [ ] Clean + merge features for clustering
+- [ ] Scale/normalize audio features
+- [ ] Apply KMeans or DBSCAN
+- [ ] Visualize clusters (PCA or t-SNE)
+- [ ] Assign cluster labels to artists
+- [ ] (Optional) Add cluster labels to Tableau
+
+---
+
+### 🧠 Phase 3: AI Feature (NLP or Recommender)
+
+Choose one:
+- [ ] Lyrics Sentiment Analysis via Hugging Face or TextBlob
+  - [ ] Pull lyrics via Genius API
+  - [ ] Run sentiment model
+  - [ ] Save results in SQL or CSV
+
+**OR**
+
+- [ ] Build mini artist recommender using cosine similarity
+- [ ] (Optional) Wrap it in Streamlit chatbot
+
+---
+
+### 🧹 Final Touches
+
+- [ ] Polish README with visuals + model summary
+- [ ] Add project summary to portfolio site
+- [ ] Push final dashboard to Tableau Public
+
 
 ## 📌 Author
 
