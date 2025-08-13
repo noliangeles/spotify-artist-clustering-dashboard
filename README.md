@@ -1,98 +1,80 @@
 # 🎵 Spotify Artist Clustering & Growth Dashboard
 
-This project analyzes Spotify artist data to explore musical styles and growth trends. Using machine learning, it clusters artists based on audio features, enabling recommendations and visualizing genre shifts over time. It also includes an interactive Tableau dashboard for exploration.
+This end-to-end project analyzes Spotify artist data to explore musical styles, audio trends, and artist growth. It uses machine learning to cluster artists based on sound, and includes an interactive Tableau dashboard to explore genre and feature patterns. A lightweight AI component adds lyrical sentiment analysis or recommendations to enrich the story.
+
+---
 
 ## 🔍 Project Objectives
 
 - Analyze audio features of tracks from diverse artists
+- Visualize artist popularity, audio trends, and genre patterns
 - Cluster artists by musical style using unsupervised learning
-- Visualize artist growth, genre patterns, and clusters
 - Recommend similar artists based on audio profile
-- Combine SQL, Python, ML, and Tableau for full-stack delivery
+- Use NLP/AI to add sentiment or discovery insights
+- Deliver a full-stack analytics & data science project using SQL, Python, ML, and Tableau
+
+---
 
 ## 📦 Tools & Technologies
 
 - Spotify API + Spotipy (Python)
-- SQL (MySQL or PostgreSQL)
-- scikit-learn (for clustering)
-- pandas, seaborn, matplotlib
-- Tableau (for dashboards)
+- MySQL (or PostgreSQL) for structured storage
+- pandas, matplotlib, seaborn, scikit-learn
+- Tableau (interactive dashboard)
+- Hugging Face / TextBlob (for optional AI/NLP)
+
+---
 
 ## 📁 Folder Structure
 project-root/
 │
-├── data/ # Raw or cleaned data (CSV or SQL dumps)
-├── notebooks/ # Jupyter Notebooks for analysis and modeling
-├── sql/ # Database schema and queries
-├── scripts/ # Python scripts for data pull and processing
-├── dashboard/ # Tableau workbook and visuals
+├── data/ # Raw or cleaned CSV data
+├── notebooks/ # Jupyter Notebooks for EDA and modeling
+├── sql/ # SQL schema and queries
+├── scripts/ # Python scripts for pulling and processing data
+├── dashboard/ # Tableau workbooks and screenshots
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 
-
-## 🚧 Project Status
-
-> **In Progress**  
-> Currently setting up the database schema and pulling artist data from the Spotify API.
+---
 
 ## 📋 Project Checklist
 
-### 📦 Phase 1: Data Engineering + Dashboard (Data Analytics)
+### 📦 Phase 1: Data Engineering + Dashboard
 
-- [x] Set up GitHub repo and folder structure
-- [x] Define database schema (SQL)
-- [x] Create tables in MySQL
-- [ ] Authenticate Spotify API via `spotipy`
-- [ ] Pull artist + album + track data
-- [ ] Pull audio features for tracks
-- [ ] Load data into SQL tables
-- [ ] Export data for Tableau
-- [ ] Design and publish Tableau dashboard:
-  - [ ] Artist popularity growth
-  - [ ] Audio feature trends
-  - [ ] Genre breakdown
-  - [ ] Interactive filters
+- [x] Repo + folder structure
+- [x] Create SQL tables
+- [ ] Pull artist + track + feature data via API
+- [ ] Load into SQL
+- [ ] Export for Tableau
+- [ ] Build and publish dashboard
 
----
+### 🤖 Phase 2: Machine Learning (Clustering)
 
-### 🤖 Phase 2: Machine Learning (Artist Clustering)
+- [ ] Clean + scale audio features
+- [ ] Cluster artists by audio
+- [ ] Visualize with PCA/t-SNE
+- [ ] Optional: Add cluster labels to Tableau
 
-- [ ] Clean + merge features for clustering
-- [ ] Scale/normalize audio features
-- [ ] Apply KMeans or DBSCAN
-- [ ] Visualize clusters (PCA or t-SNE)
-- [ ] Assign cluster labels to artists
-- [ ] (Optional) Add cluster labels to Tableau
+### 🧠 Phase 3: AI/NLP (Optional)
+
+- [ ] Lyrics sentiment analysis **or** artist recommender
+- [ ] Wrap in Streamlit or notebook
 
 ---
 
-### 🧠 Phase 3: AI Feature (NLP or Recommender)
+## 🚧 Project Status
 
-Choose one:
-- [ ] Lyrics Sentiment Analysis via Hugging Face or TextBlob
-  - [ ] Pull lyrics via Genius API
-  - [ ] Run sentiment model
-  - [ ] Save results in SQL or CSV
-
-**OR**
-
-- [ ] Build mini artist recommender using cosine similarity
-- [ ] (Optional) Wrap it in Streamlit chatbot
+> **In Progress** — database schema complete, beginning data ingestion via Spotify API
 
 ---
-
-### 🧹 Final Touches
-
-- [ ] Polish README with visuals + model summary
-- [ ] Add project summary to portfolio site
-- [ ] Push final dashboard to Tableau Public
-
 
 ## 📌 Author
 
-Noli Angeles
+**Noli Angeles**  
+[GitHub](https://github.com/noliangeles) | [Portfolio](#) *(link it when ready)*
 
 ---
 
-Stay tuned for more updates as this project evolves!
+Stay tuned for more updates!
